@@ -15,8 +15,9 @@ class InfoRow extends React.Component<Props> {
     const {
       info,
       theme: { placeholderColor },
+      style,
     } = this.props;
-    return <Body style={{ color: placeholderColor }}>{info}</Body>;
+    return <Body style={[{ color: placeholderColor }, style]}>{info}</Body>;
   };
 
   render() {
