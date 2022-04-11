@@ -28,7 +28,7 @@ class NavigationRow extends React.Component<Props> {
             {info}
           </Body>
         ) : null}
-        <Icon name="ios-arrow-forward" size={22} color={placeholderColor} />
+        <Icon name="ios-chevron-forward" size={22} color={placeholderColor} />
       </View>
     );
   };
