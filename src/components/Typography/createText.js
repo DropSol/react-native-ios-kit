@@ -13,7 +13,7 @@ type Config = {
 };
 
 const createText = (config: Config) => (props: Object) => (
-  <StyledText {...props} config={config} style={style} />
+  <StyledText {...props} config={config} />
 );
 
 export default createText;
