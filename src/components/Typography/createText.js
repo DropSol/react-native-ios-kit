@@ -9,10 +9,11 @@ type Config = {
   tracking: number,
   leading: number,
   fontWeight: string,
+  style: any,
 };
 
 const createText = (config: Config) => (props: Object) => (
-  <StyledText {...props} config={config} />
+  <StyledText {...props} config={config} style={style} />
 );
 
 export default createText;
