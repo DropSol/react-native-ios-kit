@@ -24,7 +24,7 @@ class TableViewHeader extends React.Component<Props> {
           style,
         ]}
       >
-        <Footnote style={{ color: theme.footnoteColor }}>
+        <Footnote style={[{ color: theme.footnoteColor }, style]}>
           {header.toUpperCase()}
         </Footnote>
       </View>
