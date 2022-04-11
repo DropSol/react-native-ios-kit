@@ -42,6 +42,7 @@ export type Props = {
    */
   first?: boolean,
   last?: boolean,
+  style: any,
 };
 
 class RowItem extends React.Component<Props> {
@@ -64,7 +65,7 @@ class RowItem extends React.Component<Props> {
   };
 
   renderRow = () => {
-    const { icon, title, subtitle, theme, first, last } = this.props;
+    const { icon, title, subtitle, theme, first, last, style } = this.props;
 
     return (
       <View
@@ -88,8 +89,8 @@ class RowItem extends React.Component<Props> {
             },
           ]}
         >
-          {!!title && <Body>{title}</Body>}
-          {subtitle && <Caption1>{subtitle}</Caption1>}
+          {!!title && <Body style={style}>{title}</Body>}
+          {subtitle && <Caption1 style={style}>{subtitle}</Caption1>}
         </View>
         {this.renderRight()}
       </View>
